@@ -1,0 +1,19 @@
+dt {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(155, 77, 77);
+    grid-column-start: 1;
+    margin-top: 10px;
+}
+
+dd {
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+    vertical-align: middle;
+    grid-column-start: 2;
+}
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}

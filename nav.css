@@ -1,0 +1,55 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  /*navigation bar: lofo and image */
+  
+  #logo {
+    margin: 10px 34px;
+  }
+  
+  #logo img {
+    height: 59px;
+  }
+  
+  #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:1 ;
+  }
+  /*navigation bar: list styling */
+  #navbar ul {
+    display: flex;
+    font-family: "Baloo 2", cursive;
+  }
+  
+  #navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a ,#profile{
+    display: block;
+    padding: 3px 27px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+  }
+  
+  #navbar ul li a:hover,#profile:hover {
+    /* color: white; */
+    background-color: rgb(211, 206, 206);
+    color: black;
+  }
+
+
