@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO `user_info` (`name`, `uname`, `password`, `gender`, `age`, `email`, `mobileno`, `date`) VALUES ('$name', '$uname', '$pass', '$gender', '$age', '$email', '$mobile', current_timestamp())";
         $res = mysqli_query($conn, $sql);
         if($res){
-            header("location:homepage.php?sign=true");
+            header("location:index.php?sign=true");
         }
         else{
             echo '<script>alert("invalid inputs or try again after some time");</script>';
